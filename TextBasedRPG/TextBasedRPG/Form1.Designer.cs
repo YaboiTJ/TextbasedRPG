@@ -52,7 +52,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.TitleScreen);
             this.Name = "formTitleScreen";
-            this.Text = "Form1";
+            this.Text = "Text Based RPG Title";
             ((System.ComponentModel.ISupportInitialize)(this.TitleScreen)).EndInit();
             this.ResumeLayout(false);
 
