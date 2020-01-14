@@ -60,6 +60,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="SkillSelectScreen.resx">
+      <DependentUpon>SkillSelectScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TitleScreenForm.resx">
       <DependentUpon>TitleScreenForm.cs</DependentUpon>
     </EmbeddedResource>
