@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace TextBasedRPG
 {
-    public partial class Form1 : Form
+    public partial class formTitleScreen : Form
     {
-        public Form1()
+        public formTitleScreen()
         {
             InitializeComponent();
+        }
+
+        private void TitleScreen_MouseClick(object sender, MouseEventArgs e)
+        {
+            TitleScreen.Visible = false;
         }
     }
 }
