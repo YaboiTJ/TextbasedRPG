@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formTitleScreen));
             this.TitleScreen = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.TitleScreen)).BeginInit();
             this.SuspendLayout();
@@ -51,6 +52,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.TitleScreen);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "formTitleScreen";
             this.Text = "Text Based RPG Title";
             ((System.ComponentModel.ISupportInitialize)(this.TitleScreen)).EndInit();

@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace TextBasedRPG
 {
     public partial class formTitleScreen : Form
     {
+        Thread sssthread;
         public formTitleScreen()
         {
             InitializeComponent();
@@ -19,7 +21,15 @@ namespace TextBasedRPG
 
         private void TitleScreen_MouseClick(object sender, MouseEventArgs e)
         {
-            TitleScreen.Visible = false;
+            this.Close();
+            sssthread = new Thread(openSkillSelectScreen);
+            sssthread.SetApartmentState(ApartmentState.STA);
+            sssthread.Start();
+        }
+
+        private void openSkillSelectScreen()
+        {
+            Application.Run(new SkillSelectScreen());
         }
     }
 }
