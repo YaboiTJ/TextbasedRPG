@@ -63,9 +63,6 @@
     <EmbeddedResource Include="SkillSelectScreen.resx">
       <DependentUpon>SkillSelectScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TitleScreenForm.resx">
-      <DependentUpon>TitleScreenForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
